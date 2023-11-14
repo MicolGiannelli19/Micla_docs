@@ -1,0 +1,88 @@
+---
+name: Update Client Documentation
+
+on:
+    push:
+        branches:
+            - micla_testing
+            - main
+
+jobs:
+    update_documentation:
+        runs-on: ${{ matrix.os }}
+        strategy:
+            matrix:
+                os:
+                    - ubuntu-latest
+                python-version:
+                    - 3.8
+            fail-fast: false
+        defaults:
+            run:
+                working-directory: docs
+
+        steps:
+            - uses: actions/checkout@v4
+              with:
+                  fetch-depth: 2
+
+            - name: Set up Python ${{ matrix.python-version }}
+              uses: actions/setup-python@v1
+              with:
+                  python-version: ${{ matrix.python-version }}
+
+# TODO: configure your own github account
+            
+            - name: Git login
+              run: |
+                  git config --global user.email "micol.giannelli@outlook.com"
+                  git config --global user.name "MicolGiannelli19"
+
+# udnerstand what this does and set your python env between this and the next step 
+            - name: Update pip
+              run: |
+                  python -m ensurepip
+                  python -m pip install --upgrade pip
+
+            - name: Configure python env
+              run: |
+                  python -m venv venv
+                  source venv/bin/activate
+
+            - name: Set up cache
+              uses: actions/cache@v2
+              id: cache
+              with:
+                  path: .venv
+                  key: venv-${{ runner.os }}-${{ matrix.python-version }}-${{ hashFiles('**/poetry.lock') }}-${{ hashFiles('**/pyproject.toml') }}
+
+            - name: Display Python version
+              run: poetry run python -c "import sys; print(sys.version)"
+
+            - name: Install Package
+              run: |
+                  python -m poetry install
+
+            - name: check 1
+              run: touch micla.txt
+
+            # - name: pdoc documentation generation
+            #   run: python -m poetry run pdoc -t ../../docs/custom-template twinlab !twinlab.settings -o ../../docs/docs/Python
+
+# run the python file 
+            - name: create markdown files
+              run: pwd                                                   
+          # run mkdocs yml
+            - name: adding and committing
+              run: |
+                  git add . 
+                  git commit --allow-empty -am "update documentation"            
+            # figure out what branch I want to push to and what I want to push 
+            - name: Pushing to git hub
+              uses: ad-m/github-push-action@master
+              with:
+# this is the git hub api token that should be updated in the github secrets when it expires
+# I need to change this secret  
+                  # github_token: ${{secrets.DOCUMENTATION_HOSTING}}
+                  branch: docs
+
