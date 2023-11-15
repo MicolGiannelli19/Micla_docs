@@ -50,7 +50,10 @@ jobs:
                   source venv/bin/activate
 
             - name: checking if pdoc is installed
-              run: pdoc --version
+              run: |
+                  pip install pdoc
+                  pdoc --version
+
               
 
             - name: Set up cache
@@ -91,6 +94,7 @@ jobs:
               run: |
                   git add . 
                   git commit --allow-empty -am "update documentation"
+                  git push
                   
             # figure out what branch I want to push to and what I want to push 
             - name: Pushing to git hub
