@@ -66,8 +66,8 @@ jobs:
             - name: check 1
               run: touch micla.txt
 
-            # - name: pdoc documentation generation
-            #   run: python -m poetry run pdoc -t ../../docs/custom-template twinlab !twinlab.settings -o ../../docs/docs/Python
+            # name: pdoc documentation generation
+            # run: python -m poetry run pdoc -t ../../docs/custom-template twinlab !twinlab.settings -o ../../docs/docs/Python
 
 # run the python file 
             - name: create markdown files
