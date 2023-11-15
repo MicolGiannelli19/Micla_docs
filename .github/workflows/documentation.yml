@@ -49,13 +49,17 @@ jobs:
                   python -m venv venv
                   source venv/bin/activate
 
-            - name: checking if pdoc is installed
+            - name: installing pdoc and checking
               run: |
                   pip install pdoc
                   pdoc --version
+                        
+            - name: installing mkdocs and checking
+              run: |
+                  pip install mkdocs
+                  mkdocs --version
 
-              
-
+            # I don't know what this bit of the code actuyally does TODO try comminting it out/ask
             - name: Set up cache
               uses: actions/cache@v2
               id: cache
