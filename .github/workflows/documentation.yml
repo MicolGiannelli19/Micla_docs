@@ -54,10 +54,10 @@ jobs:
                   pip install pdoc
                   pdoc --version
                         
-            - name: installing mkdocs and checking
-              run: |
-                  pip install mkdocs
-                  mkdocs --version
+            # - name: installing mkdocs and checking
+            #   run: |
+            #       pip install mkdocs
+            #       mkdocs --version
 
             # I don't know what this bit of the code actuyally does TODO try comminting it out/ask
             - name: Set up cache
@@ -103,6 +103,7 @@ jobs:
               
             - name: switching to the docs branch
               run: |
+                  git fetch
                   git checkout docs15
                   ls
                   
