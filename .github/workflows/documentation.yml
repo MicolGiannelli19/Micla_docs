@@ -78,7 +78,11 @@ jobs:
 
 # run the python file 
             - name: create markdown files
-              run: pwd                                                   
+              run: pwd                
+
+            - name: Debug GitHub Token
+              run: echo ${{secrets.GITHUB_TOKEN}}
+                                   
           # run mkdocs yml
             - name: adding and committing
               run: |
