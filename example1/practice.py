@@ -11,5 +11,8 @@ class Micla:
         """This is an example method that just returns true"""
         return True
 
+    def useless(nothing):
+        pass
+
 
 # I am having issues with this poetry env because I can't import pdocs I will try and create another python env
