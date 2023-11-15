@@ -22,7 +22,7 @@ jobs:
                 working-directory: docs
 
         steps:
-            - uses: actions/checkout@v4
+            - uses: actions/checkout@v3
               with:
                   fetch-depth: 2
 
@@ -65,6 +65,10 @@ jobs:
 
             - name: check 1
               run: touch micla.txt
+            
+            - name: check 1
+              run: pwd
+
 
             # name: pdoc documentation generation
             # run: python -m poetry run pdoc -t ../../docs/custom-template twinlab !twinlab.settings -o ../../docs/docs/Python
