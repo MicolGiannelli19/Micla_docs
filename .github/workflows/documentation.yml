@@ -111,7 +111,13 @@ jobs:
               run: |
                   git checkout micla_testing -- docs
                   ls
-                  
+
+            - name: saving the new changes in the doc branch remotely
+              run: |
+                  git add . 
+                  git commit --allow-empty -am "doc branch commit"
+                  git push
+
 #             # figure out what branch I want to push to and what I want to push 
 #             - name: Pushing to git hub
 #               uses: ad-m/github-push-action@master
