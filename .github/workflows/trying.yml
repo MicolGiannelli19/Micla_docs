@@ -4,9 +4,7 @@ name: Update Client Documentation
 on:
     push:
         branches:
-            # - micla_testing
-            - main
-
+            - micla_testing
 jobs:
     update_documentation:
         runs-on: ${{ matrix.os }}
@@ -30,8 +28,6 @@ jobs:
               uses: actions/setup-python@v1
               with:
                   python-version: ${{ matrix.python-version }}
-
-# TODO: configure your own github account
             
             - name: Git login
               run: |
@@ -44,63 +40,26 @@ jobs:
                   python -m ensurepip
                   python -m pip install --upgrade pip
 
-            - name: Configure python env
-              run: |
-                  python -m venv venv
-                  source venv/bin/activate
-
-            - name: installing pdoc and checking
-              run: |
-                  pip install pdoc
-                  pdoc --version
-                        
-            # - name: installing mkdocs and checking
-            #   run: |
-            #       pip install mkdocs
-            #       mkdocs --version
-
-            # I don't know what this bit of the code actuyally does TODO try comminting it out/ask
-            - name: Set up cache
-              uses: actions/cache@v2
-              id: cache
-              with:
-                  path: .venv
-                  key: venv-${{ runner.os }}-${{ matrix.python-version }}-${{ hashFiles('**/poetry.lock') }}-${{ hashFiles('**/pyproject.toml') }}
+            # # I don't know what this bit of the code actuyally does TODO try comminting it out/ask
+            # - name: Set up cache
+            #   uses: actions/cache@v2
+            #   id: cache
+            #   with:
+            #       path: .venv
+            #       key: venv-${{ runner.os }}-${{ matrix.python-version }}-${{ hashFiles('**/poetry.lock') }}-${{ hashFiles('**/pyproject.toml') }}
 
             - name: Display Python version
               run: python -c "import sys; print(sys.version)"
-
-            # - name: Install Package
-            #   run: |
-            #       python -m poetry install
-
-            - name: check 1
-              run: |
-                  python make.py
             
             - name: check 1
               run: |
                   pwd
                   ls
 
-            # name: pdoc documentation generation
-            # run: python -m poetry run pdoc -t ../../docs/custom-template twinlab !twinlab.settings -o ../../docs/docs/Python
-
-# run the python file 
-            - name: create markdown files
+            - name: check 1 
               run: pwd                
 
-            - name: Debug GitHub Token
-              run: echo ${{secrets.GITHUB_TOKEN}}
-                                   
-          # run mkdocs yml
-            - name: adding and committing
-              run: |
-                  git add . 
-                  git commit --allow-empty -am "update documentation"
-                  git push
 
-              
             - name: switching to the docs branch
               run: |
                   git fetch
