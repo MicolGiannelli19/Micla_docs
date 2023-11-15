@@ -20,6 +20,8 @@ pdoc(source_directory, output_directory=output_directory)
 for f in output_directory.glob("**/*.html"):
     f.rename(f.with_suffix(".md"))
 
+print("If this is showing the python code is running")
+
 
 # TODO: change it so that it doesn't create the markdown file with the name of the directory
 # TODO: understand why the same doesn't work with the twinlab module and see if these are issues related to the .env file

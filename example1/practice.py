@@ -11,5 +11,10 @@ class Micla:
         """This is an example method that just returns true"""
         return True
 
+    def trying():
+        print(
+            "what happens if I copy this folder form another branch will it get overwritten"
+        )
+
 
 # I am having issues with this poetry env because I can't import pdocs I will try and create another python env
