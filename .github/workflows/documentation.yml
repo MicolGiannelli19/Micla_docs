@@ -83,6 +83,6 @@ jobs:
               with:
 # this is the git hub api token that should be updated in the github secrets when it expires
 # I need to change this secret  
-                  # github_token: ${{secrets.DOCUMENTATION_HOSTING}}
+                  github_token: ${{secrets.TOKEN_GITHUB}}
                   branch: docs
 
