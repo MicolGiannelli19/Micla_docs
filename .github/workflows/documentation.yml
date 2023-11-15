@@ -109,7 +109,7 @@ jobs:
             
             - name: pulling changes into doc branch
               run: |
-                  git checkout micla_testing --docs
+                  git checkout micla_testing -- docs
                   ls
                   
 #             # figure out what branch I want to push to and what I want to push 
