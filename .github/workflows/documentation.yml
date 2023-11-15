@@ -4,7 +4,7 @@ name: Update Client Documentation
 on:
     push:
         branches:
-            # - micla_testing
+            - micla_testing
             - main
 
 jobs:
@@ -38,7 +38,7 @@ jobs:
                   git config --global user.email "micol.giannelli@outlook.com"
                   git config --global user.name "MicolGiannelli19"
 
-# udnerstand what this does and set your python env between this and the next step 
+# understand what this does and set your python env between this and the next step 
             - name: Update pip
               run: |
                   python -m ensurepip
@@ -59,7 +59,6 @@ jobs:
             #       pip install mkdocs
             #       mkdocs --version
 
-            # I don't know what this bit of the code actuyally does TODO try comminting it out/ask
             - name: Set up cache
               uses: actions/cache@v2
               id: cache
@@ -70,11 +69,7 @@ jobs:
             - name: Display Python version
               run: python -c "import sys; print(sys.version)"
 
-            # - name: Install Package
-            #   run: |
-            #       python -m poetry install
-
-            - name: check 1
+            - name: running a python file that updates the python documentation
               run: |
                   python make.py
             
@@ -83,15 +78,12 @@ jobs:
                   pwd
                   ls
 
-            # name: pdoc documentation generation
-            # run: python -m poetry run pdoc -t ../../docs/custom-template twinlab !twinlab.settings -o ../../docs/docs/Python
-
 # run the python file 
             - name: create markdown files
               run: pwd                
-
-            - name: Debug GitHub Token
-              run: echo ${{secrets.GITHUB_TOKEN}}
+# currently we are not using any of the github secret stuff
+            # - name: Debug GitHub Token
+            #   run: echo ${{secrets.GITHUB_TOKEN}}
                                    
           # run mkdocs yml
             - name: adding and committing
@@ -107,13 +99,13 @@ jobs:
                   git checkout docs15
                   ls
             
-            - name: pulling changes into doc branch
+            - name: Updating changes into docs_deployment branch
               run: |
                   cd ..
                   git checkout micla_testing -- docs
                   ls docs
 
-            - name: saving the new changes in the doc branch remotely
+            - name: saving the new changes in docs_deployment branch remotely
               run: |
                   git add . 
                   git commit --allow-empty -am "doc branch commit"
@@ -128,4 +120,10 @@ jobs:
 # # Something missing do I need to somehow write the name of the repo 
 #                   github_token: ${{secrets.GITHUB_TOKEN}}
 #                   branch: ${{ github.ref }}
+
+
+
+            #This is old command that created the documentation with a terminal command I will keep it just in case we change somehting 
+            # name: pdoc documentation generation
+            # run: python -m poetry run pdoc -t ../../docs/custom-template twinlab !twinlab.settings -o ../../docs/docs/Python
 

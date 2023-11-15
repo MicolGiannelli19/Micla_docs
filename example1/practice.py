@@ -14,5 +14,9 @@ class Micla:
     def useless(nothing):
         pass
 
+    def method19():
+        """A well documented method for this class that will hopefully show up in markdown"""
+        return False
+
 
 # I am having issues with this poetry env because I can't import pdocs I will try and create another python env

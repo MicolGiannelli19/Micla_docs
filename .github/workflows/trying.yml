@@ -4,7 +4,8 @@ name: Update Client Documentation
 on:
     push:
         branches:
-            - micla_testing
+            # - micla_testing
+            - main
 jobs:
     update_documentation:
         runs-on: ${{ matrix.os }}
