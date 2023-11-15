@@ -83,6 +83,7 @@ jobs:
               with:
 # this is the git hub api token that should be updated in the github secrets when it expires
 # I need to change this secret  
+# Something missing do I need to somehow write the name of the repo 
                   github_token: ${{secrets.TOKEN_GITHUB}}
-                  branch: docs
+                  branch: ${{ github.ref }}
 
