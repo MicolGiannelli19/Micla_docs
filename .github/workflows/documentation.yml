@@ -65,8 +65,7 @@ jobs:
 
             - name: check 1
               run: |
-                  touch micla.txt
-                  echo "Content of my file" >> micla.txt
+                  python make.py
             
             - name: check 1
               run: |
