@@ -1,162 +1,64 @@
 ---
-title: example1.practice
+title: example1.micla
 ---
 
 <div>
     <main class="pdoc">
             <section class="module-info">
                     <h1 class="modulename">
-<a href="./../example1.html">example1</a><wbr>.practice    </h1>
+<a href="./../example1.html">example1</a><wbr>.micla    </h1>
 
                 
-                        <input id="mod-practice-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+                        <input id="mod-micla-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
 
-                        <label class="view-source-button" for="mod-practice-view-source"><span>View Source</span></label>
+                        <label class="view-source-button" for="mod-micla-view-source"><span>View Source</span></label>
 
-                        <div class="pdoc-code codehilite"><pre><span></span><span id="L-1"><a href="#L-1"><span class="linenos"> 1</span></a><span class="k">class</span> <span class="nc">Micla</span><span class="p">:</span>
-</span><span id="L-2"><a href="#L-2"><span class="linenos"> 2</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-</span><span id="L-3"><a href="#L-3"><span class="linenos"> 3</span></a><span class="sd">    this is a random doctsring to check it pdoc is working</span>
-</span><span id="L-4"><a href="#L-4"><span class="linenos"> 4</span></a><span class="sd">    &quot;&quot;&quot;</span>
-</span><span id="L-5"><a href="#L-5"><span class="linenos"> 5</span></a>
-</span><span id="L-6"><a href="#L-6"><span class="linenos"> 6</span></a>    <span class="k">def</span> <span class="nf">fun</span><span class="p">():</span>
-</span><span id="L-7"><a href="#L-7"><span class="linenos"> 7</span></a>        <span class="s2">&quot;has a docstring adesso scrivo wualcos di diverso&quot;</span>
-</span><span id="L-8"><a href="#L-8"><span class="linenos"> 8</span></a>        <span class="k">pass</span>
-</span><span id="L-9"><a href="#L-9"><span class="linenos"> 9</span></a>
-</span><span id="L-10"><a href="#L-10"><span class="linenos">10</span></a>    <span class="k">def</span> <span class="nf">method1</span><span class="p">():</span>
-</span><span id="L-11"><a href="#L-11"><span class="linenos">11</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;This is an example method that just returns true&quot;&quot;&quot;</span>
-</span><span id="L-12"><a href="#L-12"><span class="linenos">12</span></a>        <span class="k">return</span> <span class="kc">True</span>
-</span><span id="L-13"><a href="#L-13"><span class="linenos">13</span></a>
-</span><span id="L-14"><a href="#L-14"><span class="linenos">14</span></a>    <span class="k">def</span> <span class="nf">useless</span><span class="p">(</span><span class="n">nothing</span><span class="p">):</span>
-</span><span id="L-15"><a href="#L-15"><span class="linenos">15</span></a>        <span class="k">pass</span>
-</span><span id="L-16"><a href="#L-16"><span class="linenos">16</span></a>
-</span><span id="L-17"><a href="#L-17"><span class="linenos">17</span></a>    <span class="k">def</span> <span class="nf">method19</span><span class="p">():</span>
-</span><span id="L-18"><a href="#L-18"><span class="linenos">18</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;A well documented method for this class that will hopefully show up in markdown&quot;&quot;&quot;</span>
-</span><span id="L-19"><a href="#L-19"><span class="linenos">19</span></a>        <span class="k">return</span> <span class="kc">False</span>
-</span><span id="L-20"><a href="#L-20"><span class="linenos">20</span></a>
-</span><span id="L-21"><a href="#L-21"><span class="linenos">21</span></a>
-</span><span id="L-22"><a href="#L-22"><span class="linenos">22</span></a><span class="c1"># I am having issues with this poetry env because I can&#39;t import pdocs I will try and create another python env</span>
+                        <div class="pdoc-code codehilite"><pre><span></span><span id="L-1"><a href="#L-1"><span class="linenos">1</span></a><span class="k">class</span> <span class="nc">Another</span><span class="p">:</span>
+</span><span id="L-2"><a href="#L-2"><span class="linenos">2</span></a>    <span class="k">def</span> <span class="nf">how_does_mkdocs</span><span class="p">():</span>
+</span><span id="L-3"><a href="#L-3"><span class="linenos">3</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;A method which has the purpose of testing how things appear on mkdocs but that actually does nothing&quot;&quot;&quot;</span>
+</span><span id="L-4"><a href="#L-4"><span class="linenos">4</span></a>        <span class="k">pass</span>
 </span></pre></div>
 
 
             </section>
-                <section id="Micla">
-                            <input id="Micla-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+                <section id="Another">
+                            <input id="Another-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
 <div class="attr class">
             
     <span class="def">class</span>
-    <span class="name">Micla</span>:
+    <span class="name">Another</span>:
 
-                <label class="view-source-button" for="Micla-view-source"><span>View Source</span></label>
-
-    </div>
-    <a class="headerlink" href="#Micla"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Micla-2"><a href="#Micla-2"><span class="linenos"> 2</span></a><span class="k">class</span> <span class="nc">Micla</span><span class="p">:</span>
-</span><span id="Micla-3"><a href="#Micla-3"><span class="linenos"> 3</span></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-</span><span id="Micla-4"><a href="#Micla-4"><span class="linenos"> 4</span></a><span class="sd">    this is a random doctsring to check it pdoc is working</span>
-</span><span id="Micla-5"><a href="#Micla-5"><span class="linenos"> 5</span></a><span class="sd">    &quot;&quot;&quot;</span>
-</span><span id="Micla-6"><a href="#Micla-6"><span class="linenos"> 6</span></a>
-</span><span id="Micla-7"><a href="#Micla-7"><span class="linenos"> 7</span></a>    <span class="k">def</span> <span class="nf">fun</span><span class="p">():</span>
-</span><span id="Micla-8"><a href="#Micla-8"><span class="linenos"> 8</span></a>        <span class="s2">&quot;has a docstring adesso scrivo wualcos di diverso&quot;</span>
-</span><span id="Micla-9"><a href="#Micla-9"><span class="linenos"> 9</span></a>        <span class="k">pass</span>
-</span><span id="Micla-10"><a href="#Micla-10"><span class="linenos">10</span></a>
-</span><span id="Micla-11"><a href="#Micla-11"><span class="linenos">11</span></a>    <span class="k">def</span> <span class="nf">method1</span><span class="p">():</span>
-</span><span id="Micla-12"><a href="#Micla-12"><span class="linenos">12</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;This is an example method that just returns true&quot;&quot;&quot;</span>
-</span><span id="Micla-13"><a href="#Micla-13"><span class="linenos">13</span></a>        <span class="k">return</span> <span class="kc">True</span>
-</span><span id="Micla-14"><a href="#Micla-14"><span class="linenos">14</span></a>
-</span><span id="Micla-15"><a href="#Micla-15"><span class="linenos">15</span></a>    <span class="k">def</span> <span class="nf">useless</span><span class="p">(</span><span class="n">nothing</span><span class="p">):</span>
-</span><span id="Micla-16"><a href="#Micla-16"><span class="linenos">16</span></a>        <span class="k">pass</span>
-</span><span id="Micla-17"><a href="#Micla-17"><span class="linenos">17</span></a>
-</span><span id="Micla-18"><a href="#Micla-18"><span class="linenos">18</span></a>    <span class="k">def</span> <span class="nf">method19</span><span class="p">():</span>
-</span><span id="Micla-19"><a href="#Micla-19"><span class="linenos">19</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;A well documented method for this class that will hopefully show up in markdown&quot;&quot;&quot;</span>
-</span><span id="Micla-20"><a href="#Micla-20"><span class="linenos">20</span></a>        <span class="k">return</span> <span class="kc">False</span>
-</span></pre></div>
-
-
-            <div class="docstring"><p>this is a random doctsring to check it pdoc is working</p>
-</div>
-
-
-                            <div id="Micla.fun" class="classattr">
-                                        <input id="Micla.fun-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
-<div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">fun</span><span class="signature pdoc-code condensed">(<span class="return-annotation">):</span></span>
-
-                <label class="view-source-button" for="Micla.fun-view-source"><span>View Source</span></label>
+                <label class="view-source-button" for="Another-view-source"><span>View Source</span></label>
 
     </div>
-    <a class="headerlink" href="#Micla.fun"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Micla.fun-7"><a href="#Micla.fun-7"><span class="linenos">7</span></a>    <span class="k">def</span> <span class="nf">fun</span><span class="p">():</span>
-</span><span id="Micla.fun-8"><a href="#Micla.fun-8"><span class="linenos">8</span></a>        <span class="s2">&quot;has a docstring adesso scrivo wualcos di diverso&quot;</span>
-</span><span id="Micla.fun-9"><a href="#Micla.fun-9"><span class="linenos">9</span></a>        <span class="k">pass</span>
-</span></pre></div>
-
-
-            <div class="docstring"><p>has a docstring adesso scrivo wualcos di diverso</p>
-</div>
-
-
-                            </div>
-                            <div id="Micla.method1" class="classattr">
-                                        <input id="Micla.method1-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
-<div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">method1</span><span class="signature pdoc-code condensed">(<span class="return-annotation">):</span></span>
-
-                <label class="view-source-button" for="Micla.method1-view-source"><span>View Source</span></label>
-
-    </div>
-    <a class="headerlink" href="#Micla.method1"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Micla.method1-11"><a href="#Micla.method1-11"><span class="linenos">11</span></a>    <span class="k">def</span> <span class="nf">method1</span><span class="p">():</span>
-</span><span id="Micla.method1-12"><a href="#Micla.method1-12"><span class="linenos">12</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;This is an example method that just returns true&quot;&quot;&quot;</span>
-</span><span id="Micla.method1-13"><a href="#Micla.method1-13"><span class="linenos">13</span></a>        <span class="k">return</span> <span class="kc">True</span>
-</span></pre></div>
-
-
-            <div class="docstring"><p>This is an example method that just returns true</p>
-</div>
-
-
-                            </div>
-                            <div id="Micla.useless" class="classattr">
-                                        <input id="Micla.useless-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
-<div class="attr function">
-            
-        <span class="def">def</span>
-        <span class="name">useless</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">nothing</span></span><span class="return-annotation">):</span></span>
-
-                <label class="view-source-button" for="Micla.useless-view-source"><span>View Source</span></label>
-
-    </div>
-    <a class="headerlink" href="#Micla.useless"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Micla.useless-15"><a href="#Micla.useless-15"><span class="linenos">15</span></a>    <span class="k">def</span> <span class="nf">useless</span><span class="p">(</span><span class="n">nothing</span><span class="p">):</span>
-</span><span id="Micla.useless-16"><a href="#Micla.useless-16"><span class="linenos">16</span></a>        <span class="k">pass</span>
+    <a class="headerlink" href="#Another"></a>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Another-2"><a href="#Another-2"><span class="linenos">2</span></a><span class="k">class</span> <span class="nc">Another</span><span class="p">:</span>
+</span><span id="Another-3"><a href="#Another-3"><span class="linenos">3</span></a>    <span class="k">def</span> <span class="nf">how_does_mkdocs</span><span class="p">():</span>
+</span><span id="Another-4"><a href="#Another-4"><span class="linenos">4</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;A method which has the purpose of testing how things appear on mkdocs but that actually does nothing&quot;&quot;&quot;</span>
+</span><span id="Another-5"><a href="#Another-5"><span class="linenos">5</span></a>        <span class="k">pass</span>
 </span></pre></div>
 
 
     
 
-                            </div>
-                            <div id="Micla.method19" class="classattr">
-                                        <input id="Micla.method19-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+                            <div id="Another.how_does_mkdocs" class="classattr">
+                                        <input id="Another.how_does_mkdocs-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
 <div class="attr function">
             
         <span class="def">def</span>
-        <span class="name">method19</span><span class="signature pdoc-code condensed">(<span class="return-annotation">):</span></span>
+        <span class="name">how_does_mkdocs</span><span class="signature pdoc-code condensed">(<span class="return-annotation">):</span></span>
 
-                <label class="view-source-button" for="Micla.method19-view-source"><span>View Source</span></label>
+                <label class="view-source-button" for="Another.how_does_mkdocs-view-source"><span>View Source</span></label>
 
     </div>
-    <a class="headerlink" href="#Micla.method19"></a>
-            <div class="pdoc-code codehilite"><pre><span></span><span id="Micla.method19-18"><a href="#Micla.method19-18"><span class="linenos">18</span></a>    <span class="k">def</span> <span class="nf">method19</span><span class="p">():</span>
-</span><span id="Micla.method19-19"><a href="#Micla.method19-19"><span class="linenos">19</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;A well documented method for this class that will hopefully show up in markdown&quot;&quot;&quot;</span>
-</span><span id="Micla.method19-20"><a href="#Micla.method19-20"><span class="linenos">20</span></a>        <span class="k">return</span> <span class="kc">False</span>
+    <a class="headerlink" href="#Another.how_does_mkdocs"></a>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Another.how_does_mkdocs-3"><a href="#Another.how_does_mkdocs-3"><span class="linenos">3</span></a>    <span class="k">def</span> <span class="nf">how_does_mkdocs</span><span class="p">():</span>
+</span><span id="Another.how_does_mkdocs-4"><a href="#Another.how_does_mkdocs-4"><span class="linenos">4</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;A method which has the purpose of testing how things appear on mkdocs but that actually does nothing&quot;&quot;&quot;</span>
+</span><span id="Another.how_does_mkdocs-5"><a href="#Another.how_does_mkdocs-5"><span class="linenos">5</span></a>        <span class="k">pass</span>
 </span></pre></div>
 
 
-            <div class="docstring"><p>A well documented method for this class that will hopefully show up in markdown</p>
+            <div class="docstring"><p>A method which has the purpose of testing how things appear on mkdocs but that actually does nothing</p>
 </div>
 
 
