@@ -26,8 +26,11 @@ title: example1.practice
 </span><span id="L-11"><a href="#L-11"><span class="linenos">11</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;This is an example method that just returns true&quot;&quot;&quot;</span>
 </span><span id="L-12"><a href="#L-12"><span class="linenos">12</span></a>        <span class="k">return</span> <span class="kc">True</span>
 </span><span id="L-13"><a href="#L-13"><span class="linenos">13</span></a>
-</span><span id="L-14"><a href="#L-14"><span class="linenos">14</span></a>
-</span><span id="L-15"><a href="#L-15"><span class="linenos">15</span></a><span class="c1"># I am having issues with this poetry env because I can&#39;t import pdocs I will try and create another python env</span>
+</span><span id="L-14"><a href="#L-14"><span class="linenos">14</span></a>    <span class="k">def</span> <span class="nf">useless</span><span class="p">(</span><span class="n">nothing</span><span class="p">):</span>
+</span><span id="L-15"><a href="#L-15"><span class="linenos">15</span></a>        <span class="k">pass</span>
+</span><span id="L-16"><a href="#L-16"><span class="linenos">16</span></a>
+</span><span id="L-17"><a href="#L-17"><span class="linenos">17</span></a>
+</span><span id="L-18"><a href="#L-18"><span class="linenos">18</span></a><span class="c1"># I am having issues with this poetry env because I can&#39;t import pdocs I will try and create another python env</span>
 </span></pre></div>
 
 
@@ -55,6 +58,9 @@ title: example1.practice
 </span><span id="Micla-11"><a href="#Micla-11"><span class="linenos">11</span></a>    <span class="k">def</span> <span class="nf">method1</span><span class="p">():</span>
 </span><span id="Micla-12"><a href="#Micla-12"><span class="linenos">12</span></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;This is an example method that just returns true&quot;&quot;&quot;</span>
 </span><span id="Micla-13"><a href="#Micla-13"><span class="linenos">13</span></a>        <span class="k">return</span> <span class="kc">True</span>
+</span><span id="Micla-14"><a href="#Micla-14"><span class="linenos">14</span></a>
+</span><span id="Micla-15"><a href="#Micla-15"><span class="linenos">15</span></a>    <span class="k">def</span> <span class="nf">useless</span><span class="p">(</span><span class="n">nothing</span><span class="p">):</span>
+</span><span id="Micla-16"><a href="#Micla-16"><span class="linenos">16</span></a>        <span class="k">pass</span>
 </span></pre></div>
 
 
@@ -104,6 +110,25 @@ title: example1.practice
             <div class="docstring"><p>This is an example method that just returns true</p>
 </div>
 
+
+                            </div>
+                            <div id="Micla.useless" class="classattr">
+                                        <input id="Micla.useless-view-source" class="view-source-toggle-state" type="checkbox" aria-hidden="true" tabindex="-1">
+<div class="attr function">
+            
+        <span class="def">def</span>
+        <span class="name">useless</span><span class="signature pdoc-code condensed">(<span class="param"><span class="n">nothing</span></span><span class="return-annotation">):</span></span>
+
+                <label class="view-source-button" for="Micla.useless-view-source"><span>View Source</span></label>
+
+    </div>
+    <a class="headerlink" href="#Micla.useless"></a>
+            <div class="pdoc-code codehilite"><pre><span></span><span id="Micla.useless-15"><a href="#Micla.useless-15"><span class="linenos">15</span></a>    <span class="k">def</span> <span class="nf">useless</span><span class="p">(</span><span class="n">nothing</span><span class="p">):</span>
+</span><span id="Micla.useless-16"><a href="#Micla.useless-16"><span class="linenos">16</span></a>        <span class="k">pass</span>
+</span></pre></div>
+
+
+    
 
                             </div>
                 </section>
